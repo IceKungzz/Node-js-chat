@@ -29,14 +29,14 @@ app.use(express.json());
 const router_register = require('./router_register');
 const router_login = require('./router_login');
 const router_authen = require('./router_authen')
-const router_apichat = require('./router_apichat')
+//const router_apichat = require('./router_apichat')
 const router_allchat = require('./router_allchat');
 
 // Register routers
 app.post('/register', router_register);
 app.post('/login', router_login);
 app.post('/authen', router_authen);
-app.post('/chat', router_apichat);
+//app.post('/chat', router_apichat);
 app.get('/allchat', router_allchat);
 
 
