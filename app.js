@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
-const socketIO = require('socket.io');
+const socketIO = require('./socket.io');
 require('dotenv').config();
 const { MongoClient } = require('mongodb');
 const mongodb = process.env.mongoURI;
