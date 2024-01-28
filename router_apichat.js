@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { MongoClient } = require('mongodb');
 const mongodb = process.env.mongoURI;
-const io = require('./socketio'); // Import io instance
+const io = require('socket.io'); // Import io instance
 
 router.post('/chat', async (req, res) => {
     let client;
